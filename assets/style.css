@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --SoftRed: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+
+    --Darkbrown: hsl(25, 47%, 15%);
+    --MediumBrown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --VeryPaleOrange: hsl(33, 100%, 98%);
+
+}
+body{
+    font-family: "DM", sans-serif;
+    background: var(--Cream);
+}
+html{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.flex{
+    display: flex;
+}
+main{
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    margin: auto;
+}
+header{
+    background: var(--SoftRed);
+    border-radius: 12px;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: var(--VeryPaleOrange);
+}
+header p{
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+    color: var(--Cream);
+}
+header span{
+    font-size: 1.5rem;
+    font-weight: 400    ;
+}
+header img{
+    width: 50px;
+}
+.chart-container{
+    background: var(--VeryPaleOrange);
+    padding: 2rem;
+    border-radius: 12px;
+}
+.chart{
+    border-bottom: 2px solid var(--Cream);
+    padding-bottom: 1rem;
+}
+.chart h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Darkbrown);
+}
+.chart-bottom{
+    padding-top: 1rem;
+}
+.chart-bottom p{
+    font-size: 0.7rem;
+    color: var(--MediumBrown);
+}
+.total-container{
+    justify-content: space-between;
+    align-items: center;
+}
+.total-container span{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--Darkbrown);
+    padding-top: 0.7rem;
+}
+.info span{
+    font-size: 1rem;
+}
